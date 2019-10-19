@@ -11,9 +11,9 @@ class Triangle
   def kind
     if @x == 0 || @y == 0 || @z == 0
       raise TriangleError
-    elsif @x !== @y && @y !== @z
+    elsif @x != @y && @y != @z
       raise TriangleError
-      
+
     elsif @x == @y && @y == @z
       :equilateral
     elsif @x == @y && @x != @z || @x == @z && @x != @y || @y == @z && @y != @x
