@@ -12,8 +12,9 @@ class Triangle
     if @x == 0 || @y == 0 || @z == 0
       raise TriangleError
 
+else
 
-    elsif @x == @y && @y == @z
+    if @x == @y && @y == @z
       :equilateral
     elsif @x == @y && @x != @z || @x == @z && @x != @y || @y == @z && @y != @x
       :isosceles
