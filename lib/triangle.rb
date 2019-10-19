@@ -10,7 +10,7 @@ class Triangle
   end
 
   def equilateral
-    @x == @y == @z
+     @x == @y && @y == @z
   end
 
 
