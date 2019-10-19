@@ -1,10 +1,18 @@
 class Triangle
   # write code here
-  attr_accessor :equilateral, :isosceles, :scalene
+  attr_accessor :x, :y, :z
+  #:equilateral, :isosceles, :scalene
 
-  def initialize(attributes)
-     attributes.each {|key, value| self.send(("#{key}="), value)}
+  def initialize(x, y, z)
+    @x = x
+    @y = y
+    @z = z
   end
+
+  def equilateral
+    @x == @y == @z
+  end
+
 
 class TriangleError < StandardError
     # triangle error code
