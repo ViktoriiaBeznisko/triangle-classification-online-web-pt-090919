@@ -1,7 +1,6 @@
 class Triangle
   # write code here
-  attr_accessor :x, :y, :z
-  #:equilateral, :isosceles, :scalene
+  attr_accessor :x, :y, :z, :equilateral, :isosceles, :scalene
 
   def initialize(x, y, z)
     @x = x
@@ -9,9 +8,12 @@ class Triangle
     @z = z
   end
 
-  def kind_kind
+  def kind
     if @x == @y && @y == @z
-      return :equilateral
+      :equilateral
+    elsif @x != @y && @y != @z
+      :scalene
+
   end
 end
 
