@@ -17,14 +17,13 @@ class Triangle
     elsif @x != @y && @y != @z
       :scalene
     else
-      if @x == 0 || @y == 0 || @z == 0
+      @x == 0 || @y == 0 || @z == 0
         raise TriangleError
-
-
 
 
   end
 end
+
 
 class TriangleError < StandardError
     # triangle error code
