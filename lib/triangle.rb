@@ -13,16 +13,12 @@ class Triangle
       raise TriangleError
     elsif @x + @y <= @z || @x + @z <= @y || @y + @z <= @x
       raise TriangleError
-
     elsif @x == @y && @y == @z
       :equilateral
     elsif @x == @y && @x != @z || @x == @z && @x != @y || @y == @z && @y != @x
       :isosceles
     else @x != @y && @y != @z
       :scalene
-
-
-
   end
 end
 
