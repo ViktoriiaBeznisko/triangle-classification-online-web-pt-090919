@@ -10,9 +10,10 @@ class Triangle
   end
 
   def equilateral
-     @x == @y && @y == @z
+    if @x == @y && @y == @z
+      return :equilateral
   end
-
+end
 
 class TriangleError < StandardError
     # triangle error code
