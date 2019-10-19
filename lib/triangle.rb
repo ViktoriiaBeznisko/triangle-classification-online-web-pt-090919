@@ -9,7 +9,7 @@ class Triangle
     @z = z
   end
 
-  def equilateral
+  def kind
     if @x == @y && @y == @z
       return :equilateral
   end
